@@ -5,18 +5,27 @@ let age = prompt('Quanti anni hai?');
 /* Calcolo del prezzo del biglietto */
 const priceKm = 0.21;
 ticketPrice = distanceKm * priceKm;
-
-/* Gestione degli sconti */
-let discountUnder = 20;
-let discountOver = 40;
+let discount;
 
 /* Controllo dell'età del passeggero */
 if(age < 18){
-    ticketPrice -= ticketPrice * discountUnder / 100;
-    console.log(ticketPrice);
+    discount = 20;
+
+    /* Gestione del prezzo under 18 */
+    ticketPrice -= ticketPrice * discount / 100;
+    console.log(ticketPrice.toFixed(2));
 }else if(age > 65){
-    ticketPrice -= ticketPrice * discountOver / 100;
-    console.log(ticketPrice);
+    discount = 40;
+
+    /* Gestione del prezzo over 65 */
+    ticketPrice -= ticketPrice * discount / 100;
+    console.log(ticketPrice.toFixed(2));
 }else{
-    console.log(ticketPrice);
+    console.log(ticketPrice.toFixed(2));
 }
+
+/* Inserimento dati nella pagina HTML */
+document.getElementById('km').innerHTML = distanceKm + 'Km';
+document.getElementById('age').innerHTML = age + ' anni';
+document.getElementById('discount').innerHTML = discount + '%';
+document.getElementById('price').innerHTML = ticketPrice.toFixed(2) + '€';
