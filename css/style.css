@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+body{
+    background-color: rgb(227, 227, 227);
+    font-family: 'Inter';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMUNI */
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.row{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.col{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.align-start{
+    align-items: baseline;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.bold-font{
+    font-weight: 800;
+}
+
+.normal-font{
+    font-weight: 400;
+}
+
+.font-size-1{
+    font-size: 40px;
+}
+
+.font-size-2{
+    font-size: 36px;
+}
+
+.font-size-3{
+    font-size: 24px;
+    font-weight: 400;
+}
+/* BODY BIGLIETTO */
+.ticket_container{
+    margin: 0 auto;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.ticket{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+/* HEADER BIGLIETTO */
+header{
+    width: 100%;
+    height: 70px;
+    border-bottom: dashed 1px black;
+}
+
+/* MAIN */
+.container-main{
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
+}
+
+footer{
+    margin-top: 50px;
+    border-top: dashed 1px black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}

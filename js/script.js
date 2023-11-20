@@ -21,6 +21,8 @@ if(age < 18){
     ticketPrice -= ticketPrice * discount / 100;
     console.log(ticketPrice.toFixed(2));
 }else{
+    discount = 0;
+    
     console.log(ticketPrice.toFixed(2));
 }
 
