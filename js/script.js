@@ -26,8 +26,11 @@ if(age < 18){
     console.log(ticketPrice.toFixed(2));
 }
 
+let idCode = Math.floor(Math.random() * 99999) + 1000;
+
 /* Inserimento dati nella pagina HTML */
 document.getElementById('km').innerHTML = distanceKm + 'Km';
 document.getElementById('age').innerHTML = age + ' anni';
 document.getElementById('discount').innerHTML = discount + '%';
 document.getElementById('price').innerHTML = ticketPrice.toFixed(2) + '€';
+document.getElementById('code').innerHTML = idCode;
